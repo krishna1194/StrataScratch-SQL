@@ -7,6 +7,6 @@ with d1cr as
 (
 select reaction, count(reaction) as n_occurences from facebook_reactions
 where date_day = 1
-group by reaction
+group by reaction 
 )
 select reaction, n_occurences from d1cr where n_occurences in (select max(n_occurences) from d1cr);
