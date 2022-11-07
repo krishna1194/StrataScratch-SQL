@@ -11,4 +11,4 @@ when business_name like '%café%' or business_name like '%coffee%' or business_n
 else 'other' 
 end as business_type
 from sf_restaurant_health_violations
-group by binary business_name;
+group by binary business_name; 
